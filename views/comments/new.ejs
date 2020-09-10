@@ -1,10 +1,11 @@
 <<%- include('../partials/header') -%>
 
 
-   <div class="row" style="margin: auto;" >
-        <h1 style="text-align: center ; margin: 40px 300px"> ADD NEW COMMENTS TO : <%= campground.name %>  </h1>
+   <div class="row" style="text-align: center;" >
+        
+          <div style="width: 30%; margin: 25px auto" >
+                 <h1 style="text-align: center ;"> Add Comments To : <%= campground.name %>  </h1>
 
-          <div style="width: 30%; margin-left: 350px " >
 	
 	           <form action="/campgrounds/<%= campground._id %>/comments/ " method="POST" style="margin-top: 35px;" >
 	             <div class="form-group" >

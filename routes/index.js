@@ -29,7 +29,7 @@ router.post("/register", function(req, res){
     return res.render("register", {error: err.message});
 }
      passport.authenticate("local")(req, res, function(){
-      req.flash("success", "Welcome to Yelpcamp" + user.username);
+      req.flash("success", "Welcome to JaatCamp " +  user.username);
       res.redirect("/campgrounds");
      });
      
@@ -47,7 +47,7 @@ router.post("/login", passport.authenticate("local",
     failureRedirect: "/login"
 
    }), function(req, res){
-  res.send("LOGIN LOGIC HA!PPENS HERE")
+  res.send("LOGIN LOGIC HAPPENS HERE");
 });
 
 // logout route

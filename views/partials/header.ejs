@@ -28,7 +28,7 @@
                   <li class="<%= typeof page !== 'undefined' && page === 'login' ? 'active' : '' %>"><a class="nav-link" href="/login">Login</a></li>
                   <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a class="nav-link" href="/register">Sign Up</a></li>
               <% } else { %>
-                  <li><a class="nav-link" href="#">Signed In As <%= currentUser.username %></a></li>
+                  <li><a class="nav-link" href="#">SignedInAs    <%= currentUser.username %></a></li>
                   <li><a class="nav-link" href="/logout">Logout</a></li>
               <% } %>
           </ul>
@@ -50,5 +50,5 @@
              <% } %>
     </div>
 
-<div class="container" style="margin: 50px auto">
+<div class="container  " style="margin: 50px auto"  >
 
